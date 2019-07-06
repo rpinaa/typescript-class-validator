@@ -1,0 +1,77 @@
+{
+  "name": "typescript-class-validator",
+  "version": "0.0.2",
+  "description": "A library for runtime param validations using typescript decorators that works with `class-validator` library.",
+  "directories": {
+    "test": "test"
+  },
+  "main": "dist/typescript-class-validator.js",
+  "module": "dist/typescript-class-validator.js",
+  "typings": "dist/types/typescript-class-validator.d.ts",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/test/"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 85,
+        "functions": 95,
+        "lines": 90,
+        "statements": 90
+      }
+    },
+    "collectCoverage": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rpinaa/typescript-class-validator.git"
+  },
+  "keywords": [
+    "typescript",
+    "validator",
+    "class",
+    "attribute",
+    "validation"
+  ],
+  "author": "Ricardo Pina Arellano <pinaarellano0@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rpinaa/typescript-class-validator/issues"
+  },
+  "homepage": "https://github.com/rpinaa/typescript-class-validator#readme",
+  "dependencies": {
+    "class-transformer": "^0.2.3",
+    "class-validator": "^0.9.1",
+    "reflect-metadata": "^0.1.13"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.15",
+    "@types/node": "^12.0.12",
+    "jest": "^24.8.0",
+    "ts-jest": "^24.0.2",
+    "ts-node": "^8.3.0",
+    "tslint": "^5.18.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-config-standard": "^8.0.1",
+    "typescript": "^3.5.2"
+  }
+}
