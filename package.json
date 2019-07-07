@@ -1,21 +1,22 @@
 {
   "name": "typescript-class-validator",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "description": "A library for runtime param validations using typescript decorators that works with `class-validator` library.",
   "directories": {
     "test": "test"
   },
-  "main": "dist/typescript-class-validator.js",
-  "module": "dist/typescript-class-validator.js",
+  "main": "dist/src/typescript-class-validator.js",
+  "module": "dist/src/typescript-class-validator.js",
   "typings": "dist/types/typescript-class-validator.d.ts",
   "files": [
     "dist"
   ],
   "engines": {
-    "node": ">=6.0.0"
+    "node": ">=9.0.0"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "tsc --module umd --outDir dist/lib"
   },
   "jest": {
     "transform": {
