@@ -60,7 +60,7 @@
   },
   "homepage": "https://github.com/rpinaa/typescript-class-validator#readme",
   "dependencies": {
-    "class-transformer": "^0.2.3",
+    "class-transformer": "^0.3.1",
     "class-validator": "^0.9.1",
     "reflect-metadata": "^0.1.13"
   },
